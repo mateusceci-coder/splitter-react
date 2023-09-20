@@ -1,10 +1,10 @@
 import PercentageItem from "./PercentageItem"
-import { Dispatch, SetStateAction } from "react"
 
 interface PercentageListProps {
-    onChangeTip: Dispatch<SetStateAction<any>>,
+    onChangeTip: (value: number) => void,
     tip: number
 }
+
 
 export default function PercentageList({onChangeTip, tip}: PercentageListProps) {
 

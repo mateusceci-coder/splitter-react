@@ -1,9 +1,8 @@
 import LabelSplit from "../../layouts/LabelSplit"
 import PercentageList from "./PercentageList"
-import { Dispatch, SetStateAction } from "react"
 
 interface PercentageComponentProps {
-    onChangeTip: Dispatch<SetStateAction<any>>,
+    onChangeTip: (value: number) => void,
     tip: number
 }
 
